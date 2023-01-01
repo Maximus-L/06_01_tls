@@ -10,6 +10,8 @@ jobs:
   build:
     runs-on: ubuntu-20.04
     steps:
+      - run: sudo apt install -y gcc
+      - run: sudo apt install -y make
       - name: Checkout Code
         uses: actions/checkout@v3
       - name: Build Binary
